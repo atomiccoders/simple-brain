@@ -1,24 +1,31 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png" />
-    <HelloWorld msg="Welcome to Your Vue.js App" />
+    <h2>Simple Brain Model</h2>
+    <p>
+      The application looks on the canvas where you can draw a digit and then
+      returns a digit that you draw.
+    </p>
+    <Canvas />
+    <Results />
   </div>
 </template>
 
 <script>
-import HelloWorld from "./components/HelloWorld.vue";
+import Canvas from './components/Canvas.vue'
+import Results from './components/Results.vue'
 
 export default {
-  name: "app",
+  name: 'app',
   components: {
-    HelloWorld
-  }
-};
+    Canvas,
+    Results,
+  },
+}
 </script>
 
 <style lang="scss">
 #app {
-  font-family: "Avenir", Helvetica, Arial, sans-serif;
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
